@@ -32,13 +32,15 @@ const Details = function () {
     <Container>
       <Row>
         <Col className="d-flex justify-content-center">
-          <Card className="my-2" style={{ width: "400px" }}>
-            <Card.Img variant="top" src={article?.image_url} />
-            <Card.Body>
-              <Card.Title>{article?.title}</Card.Title>
-              <Card.Text>{article?.summary}</Card.Text>
-            </Card.Body>
-          </Card>
+          {article && (
+            <Card className="my-2" style={{ width: "400px" }}>
+              <Card.Img variant="top" src={article.image_url} />
+              <Card.Body>
+                <Card.Title>{article.title}</Card.Title>
+                <Card.Text>{article.summary}</Card.Text>
+              </Card.Body>
+            </Card>
+          )}
         </Col>
       </Row>
     </Container>
