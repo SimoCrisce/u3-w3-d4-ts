@@ -2,6 +2,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { Result } from "../interfaces/ArticleInterface";
 import { Link } from "react-router-dom";
+
 interface ArticleProps {
   articleDetails: Result;
 }
